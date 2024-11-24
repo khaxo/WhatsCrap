@@ -33,7 +33,7 @@ public class ConnectionWindow extends JFrame {
         int port = Integer.parseInt(portField.getText().trim());
 
         try {
-            ChatClient client = new ChatClient("84.115.217.16", port);
+            ChatClient client = new ChatClient(ip, port);
             ChatWindow chatWindow = new ChatWindow(client);
             chatWindow.setVisible(true);
             this.dispose();
